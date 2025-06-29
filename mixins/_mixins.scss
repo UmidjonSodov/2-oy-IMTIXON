@@ -1,0 +1,7 @@
+@mixin btn-lord ($color, $paddingY, $paddingX, $backround, $border-radius, $font-size, $border-color) {
+    color: $color;
+    padding: $paddingY $paddingX;
+    border-radius: $border-radius;
+    font-size: $font-size;
+    border: $border-color;
+}

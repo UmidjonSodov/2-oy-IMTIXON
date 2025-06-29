@@ -1,0 +1,74 @@
+.home-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    .sign-in_btn{
+        color: rgba(11, 19, 42, 1);
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 16px;
+        border: none;
+        background: none;
+
+        &:hover{
+            color: rgba(245, 56, 85, 1);
+        }
+
+        cursor: pointer
+    }
+
+    .sign-up_btn{
+        @include btn-lord(rgba(245, 56, 85, 1), 13px, 35px, #ffff, 50px, 16px, 1px solid rgba(245, 56, 85, 1));
+    
+        cursor: pointer;
+    }
+    }
+
+    
+    .home-get-btn{
+        @include btn-lord(white, 13px, 45px,  none, 5px, 16px, 1px solid rgba(245, 56, 85, 1));
+
+        box-shadow: 0 25px 40px rgba(255, 0, 0, 0.208);
+        transition: transform 0.4s ease-out;
+        &:hover{
+            transform: translateY(-6px);
+      transition: transform 0.7 s ease-in;
+        }
+        cursor: pointer 
+    }
+    
+
+
+    .select-btn{
+        @include btn-lord(rgba(245, 56, 85, 1), 10px, 55px, #ffff, 50px, 16px, 2px solid rgba(245, 56, 85, 1));
+
+        position: relative;
+        right: 30px;
+        top: 15px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover{
+            transform: translateY(-6px);
+      transition: transform 0.7 s ease-in;
+        }
+    }
+
+    .subscribe-now-btn{
+        @include btn-lord(white, 15px, 58px, #ffff, 50px, 16px, 2px solid rgba(245, 56, 85, 1));
+
+        position: relative;
+        left: 960px;
+        bottom: 50px;
+        border-radius: 10px;
+        font-weight: bold;
+        box-shadow: 0 25px 40px rgba(255, 0, 0, 0.362);
+        cursor: pointer;
+        &:hover{
+            transform: translateY(-6px);
+      transition: transform 0.7 s ease-in;
+        }
+    }
