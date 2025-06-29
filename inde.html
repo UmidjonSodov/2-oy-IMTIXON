@@ -6,15 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     
-    <header>
-        <div class="home_navigation">
+    <header >
+        <div class="home_navigation" data-aos="fade-right">
             <img src="./imgs/Logo.png" alt="" class="logo">
-            <nav>
-                <ul>
+            <nav >
+                <ul data-aos="fade-right">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Pricing</a></li>
@@ -31,7 +31,7 @@
     </header>
 
     <main>
-        <section class="home_text ">
+        <section class="home_text " data-aos="fade-right">
             <h1>Want anything to be <br> easy with <span style="font-weight: bolder;">LaslesVPN.</span></h1>
             <p>Provide a network for all your needs with ease and fun using <span>LaslesVPN</span> <br> discover interesting features from
                 us.</p>
@@ -44,7 +44,7 @@
     </main>
 
     <section>
-        <div class="box">
+        <div class="box" data-aos="fade-left">
                 <div class="elements">
                         <div class="row">
                             <img src="./imgs/user.png" alt="">
@@ -80,13 +80,13 @@
         </div>
     </section>
 
-    <div class="features">
+    <div class="features" >
         <div class="feature">
-            <div class="oco">
+            <div class="oco" data-aos="fade-down-right">
                 <img src="./imgs/illustration 2.png" alt="">
             </div>
 
-            <div class="text">
+            <div class="text" data-aos="fade-down-left">
                 <h2>We Provide Many <br> Features You Can Use</h2>
                 <p>You can explore the features that we provide with fun <br> and  have their own functions each feature.</p>
                 <ul>
@@ -99,8 +99,8 @@
         </div>
     </div>
 
-    <div class="select">
-        <div class="payme">
+    <div class="select" >
+        <div class="payme" >
             <div class="plan">
                 <h1>Choose Your Plan</h1>
 
@@ -211,8 +211,8 @@
         </div>
 
 
-        <div class="customer">
-            <div class="custome">
+        <div class="customer" data-aos="flip-left">
+            <div class="custome" >
                 <div class="custome-text">
                     <h1>Trusted by Thousands of <br> Happy Customer</h1>
 
@@ -338,5 +338,10 @@
                 </div>
             </div>
         </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>
